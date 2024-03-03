@@ -15,8 +15,8 @@ const Home = () => {
             Hi, I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-          I am a full-stack developer with 3 years of experience using NodeJS and 1 year using React.
-          Get in touch if you want to know more!
+            I am a full-stack developer with 3 years of experience using NodeJS and 1 year using React.
+            Get in touch if you want to know more!
           </p>
 
           <div>
