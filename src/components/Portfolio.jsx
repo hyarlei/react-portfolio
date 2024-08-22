@@ -1,21 +1,21 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import CinePrime from "../assets/portfolio/CinePrime.png";
+import EZDine from "../assets/portfolio/EZDine.png";
+import PetWalk from "../assets/portfolio/PetWalk.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: EZDine,
     },
     {
       id: 2,
-      src: reactParallax,
+      src: CinePrime,
     },
     {
       id: 3,
-      src: navbar,
+      src: PetWalk,
     },
   ];
 
