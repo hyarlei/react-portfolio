@@ -44,14 +44,9 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105 w-full"
               />
               <div className="flex items-center justify-center">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
-                >
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center">
                   Demo
-                </a>
+                </button>
                 <a
                   href={codeLink || "#"}
                   target="_blank"
