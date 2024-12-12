@@ -1,6 +1,10 @@
+// src/components/Contact.jsx
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const handleSubmit = (e) => {
     const form = e.target;
     const name = form.name.value.trim();
@@ -9,21 +13,21 @@ const Contact = () => {
 
     if (!name || !email || !message || !/\S+@\S+\.\S+/.test(email)) {
       e.preventDefault();
-      alert("Por favor, preencha todos os campos corretamente.");
+      alert(t("Por favor, preencha todos os campos corretamente."));
     }
   };
 
   return (
     <div
       name="contact"
-      className="w-full bg-gradient-to-b from-black to-gray-800 text-white"
+      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Contact
+            {t('contactTitle')}
           </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
+          <p className="py-6">{t('contactDescription')}</p>
         </div>
 
         <div className="flex justify-center items-center">
@@ -36,20 +40,20 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              placeholder="Enter your name"
+              placeholder={t('enterName')}
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none focus:ring focus:ring-blue-500"
               required
             />
             <input
               type="email"
               name="email"
-              placeholder="Your email address"
+              placeholder={t('yourEmail')}
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none focus:ring focus:ring-blue-500"
               required
             />
             <textarea
               name="message"
-              placeholder="Your message"
+              placeholder={t('yourMessage')}
               rows="10"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none focus:ring focus:ring-blue-500"
               required
@@ -59,7 +63,7 @@ const Contact = () => {
               type="submit"
               className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
             >
-              Submit
+              {t('submit')}
             </button>
           </form>
         </div>
