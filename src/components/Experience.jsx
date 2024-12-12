@@ -1,20 +1,17 @@
 import React from "react";
 
 import css from "../assets/css.png";
-import git from "../assets/git.png";
 import github from "../assets/github.png";
 import html from "../assets/html.png";
 import javascript from "../assets/javascript.png";
+import mongodb from "../assets/mongodb.png";
 import nestjs from "../assets/nestjs.png";
-import nextjs from "../assets/nextjs.png";
 import node from "../assets/node.png";
 import postgresql from "../assets/postgrees.png";
 import prisma from "../assets/prisma.png";
 import reactImage from "../assets/react.png";
-import sqlite from "../assets/sqlite.png";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png";
-import vue from "../assets/vuejs.png";
 
 const Experience = () => {
   const techs = [
@@ -62,58 +59,40 @@ const Experience = () => {
     },
     {
       id: 8,
-      src: postgresql,
-      title: "PostgreSQL",
-      style: "shadow-blue-400",
-    },
-    {
-      id: 9,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
     {
+      id: 9,
+      src: postgresql,
+      title: "PostgreSQL",
+      style: "shadow-blue-400",
+    },
+    {
       id: 10,
-      src: git,
-      title: "Git",
-      style: "shadow-red-500",
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-green-500",
     },
     {
       id: 11,
-      src: nestjs,
-      title: "NestJS",
-      style: "shadow-red-600",
+      src: prisma,
+      title: "Prisma",
+      style: "shadow-gray-400",
     },
     {
       id: 12,
-      src: nextjs,
-      title: "Next.js",
-      style: "shadow-white",
-    },
-    {
-      id: 13,
-      src: prisma,
-      title: "Prisma",
-      style: "shadow-blue-400",
-    },
-    {
-      id: 14,
-      src: sqlite,
-      title: "SQLite",
-      style: "shadow-blue-400",
-    },
-    {
-      id: 15,
-      src: vue,
-      title: "Vue.js",
-      style: "shadow-green-500",
+      src: nestjs,
+      title: "Nest.js",
+      style: "shadow-red-500",
     },
   ];
 
   return (
     <div
       name="experience"
-      className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="bg-gradient-to-b from-gray-800 to-black w-full text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -123,14 +102,14 @@ const Experience = () => {
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 text-center py-8 px-2">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-4 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt={title} className="w-16 mx-auto" />
-              <p className="mt-4 text-sm md:text-base">{title}</p>
+              <img src={src} alt={title} className="w-20 mx-auto" />
+              <p className="mt-4">{title}</p>
             </div>
           ))}
         </div>

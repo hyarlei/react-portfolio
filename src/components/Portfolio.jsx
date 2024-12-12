@@ -8,17 +8,20 @@ const Portfolio = () => {
     {
       id: 1,
       src: EZDine,
-      codeLink: "https://www.ezdineapp.com",
+      demoLink: "https://www.ezdineapp.com",
+      codeLink: "https://github.com/SimpliSoft/EZDine-landingpage.git"
     },
     {
       id: 2,
       src: CinePrime,
-      codeLink: "https://cine-prime-vue.vercel.app",
+      demoLink: "https://cine-prime-vue.vercel.app/#/",
+      codeLink: "https://github.com/hyarlei/CinePrime_Vue.git"
     },
     {
       id: 3,
       src: PetWalk,
-      codeLink: "https://app.petwalk.com.br",
+      demoLink: "https://app.petwalk.com.br",
+      codeLink: "https://github.com/hyarlei/petwalk-pay.git"
     },
   ];
 
@@ -36,7 +39,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-0">
-          {portfolios.map(({ id, src, codeLink }) => (
+          {portfolios.map(({ id, src, demoLink, codeLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -44,14 +47,19 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105 w-full"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center">
+                <a
+                  href={demoLink || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full px-6 py-3 m-2 duration-200 hover:scale-105 text-center"
+                >
                   Demo
-                </button>
+                </a>
                 <a
                   href={codeLink || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
+                  className="w-full px-6 py-3 m-2 duration-200 hover:scale-105 text-center"
                 >
                   Code
                 </a>

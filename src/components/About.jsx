@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -13,35 +13,23 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-20 sm:text-lg">
-          I am a committed and passionate student in the area of Information Technology,
-          currently enrolled in the Information System course at the Federal University of Ceará (UFC).
-          My goal is to acquire vast knowledge in my area of expertise and, above all, to master different programming languages.
-        </p>
+        <div className="space-y-8">
+          <p className="text-lg sm:text-xl mt-10">
+            I am a passionate Information Technology student at the Federal University of Ceará (UFC), aiming to master various programming languages.
+          </p>
 
-        <br />
+          <p className="text-lg sm:text-xl">
+            Currently, I am enhancing my skills in Typescript, Nodejs, and React to become a FullStack Developer.
+          </p>
 
-        <p className="text-xl sm:text-lg">
-          I am currently dedicating my efforts to improving my skills in
-          Typescript, Nodejs and React. My goal is to become a FullStack Developer.
-        </p>
+          <p className="text-lg sm:text-xl">
+            I am dedicated to my field, always seeking to collaborate and contribute with my experience. My goal is to develop innovative projects that positively impact lives.
+          </p>
 
-        <br />
-
-        <p className="text-xl sm:text-lg">
-          I am a person committed to my area of knowledge and work,
-          always looking to collaborate and contribute with my experience and skills.
-          My biggest interest is to continue developing innovative projects that positively impact people's lives.
-        </p>
-
-        <br />
-
-        <p className="text-xl sm:text-lg">
-          I am looking for opportunities to grow professionally and apply my knowledge in challenging projects,
-          as I believe this will allow me to further expand my vision and skills.
-          I believe that my motivation and determination are fundamental to achieving my goals and, above all,
-          to contribute to the evolution of the Information Technology area.
-        </p>
+          <p className="text-lg sm:text-xl">
+            I am looking for opportunities to grow professionally and apply my knowledge in challenging projects, contributing to the evolution of Information Technology.
+          </p>
+        </div>
       </div>
     </div>
   );
