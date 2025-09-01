@@ -83,8 +83,7 @@ const Footer = () => {
                 &lt;Hyarlei Silva /&gt;
               </h3>
               <p className="text-gray-400 text-lg leading-relaxed max-w-md">
-                Desenvolvedor Full Stack apaixonado por criar soluções digitais inovadoras. 
-                Transformando ideias em realidade através de código limpo e eficiente.
+                Fullstack Developer | Node.js, TypeScript & Python | Information Systems Student | Open to Internship/Junior Opportunities
               </p>
             </div>
             

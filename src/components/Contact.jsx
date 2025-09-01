@@ -2,8 +2,10 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast';
 import { useTranslation } from 'react-i18next';
-import { FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaPaperPlane } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
+import { contactInfo } from '../data/contactData';
+import SectionHeader from './ui/SectionHeader';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -41,30 +43,6 @@ const Contact = () => {
       }
     }
   };
-
-  const contactInfo = [
-    {
-      icon: FaEnvelope,
-      title: "Email",
-      value: "hyarlei@exemplo.com",
-      link: "mailto:hyarlei@exemplo.com",
-      color: "text-purple-400"
-    },
-    {
-      icon: FaLinkedin,
-      title: "LinkedIn",
-      value: "/in/hyarlei",
-      link: "https://linkedin.com/in/hyarlei",
-      color: "text-blue-400"
-    },
-    {
-      icon: FaGithub,
-      title: "GitHub",
-      value: "/hyarlei",
-      link: "https://github.com/hyarlei",
-      color: "text-gray-400"
-    }
-  ];
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -165,37 +143,11 @@ const Contact = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <motion.div 
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.8 }}
-        >
-          <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Vamos {' '}
-            <span className="gradient-text">Conversar</span>
-          </motion.h2>
-          <motion.p 
-            className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed"
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            Tem uma ideia interessante? Quer colaborar em um projeto? Ou apenas quer trocar uma ideia sobre tecnologia? 
-            Estou sempre aberto para novas oportunidades e conversas!
-          </motion.p>
-          <motion.div 
-            className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-6 rounded-full"
-            initial={{ width: 0 }}
-            animate={inView ? { width: 96 } : { width: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          />
-        </motion.div>
+        <SectionHeader
+          title="Vamos"
+          highlightedText="Conversar"
+          description="Tem uma ideia interessante? Quer colaborar em um projeto? Ou apenas quer trocar uma ideia sobre tecnologia? Estou sempre aberto para novas oportunidades e conversas!"
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
