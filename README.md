@@ -34,30 +34,34 @@ Este é meu portfólio profissional como Desenvolvedor Full Stack, criado com Re
 ## ⚙️ Instalação e Uso
 
 1. **Clone o repositório**
+
    ```bash
    git clone https://github.com/hyarlei/react-portfolio.git
    cd react-portfolio
    ```
 
 2. **Instale as dependências**
+
    ```bash
    npm install
    ```
 
 3. **Execute o servidor de desenvolvimento**
+
    ```bash
    npm run dev
    ```
 
 4. **Construa para produção**
+
    ```bash
    npm run build
    ```
 
 ## 🌐 Estrutura do Projeto
 
-```
-src/
+ ```src/
+ src/
 ├── assets/         # Imagens e recursos estáticos
 ├── components/     # Componentes React
 │   ├── ui/         # Componentes de UI reutilizáveis
