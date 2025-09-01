@@ -32,7 +32,7 @@ export const portfolioProjects = [
       { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
       { name: "Tailwind", icon: SiTailwindcss, color: "text-cyan-400" }
     ],
-    category: "Frontend"
+    category: "Full Stack"
   },
   {
     id: 3,
@@ -46,6 +46,6 @@ export const portfolioProjects = [
       { name: "Node.js", icon: FaNodeJs, color: "text-green-400" },
       { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" }
     ],
-    category: "Full Stack"
+    category: "Back end"
   },
 ];

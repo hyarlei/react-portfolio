@@ -129,7 +129,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              Sou{' '}
+              {' '}
               <span className="gradient-text relative">
                 {displayText}
                 <span className="animate-ping absolute -right-1 text-blue-400 text-xl sm:text-2xl md:text-3xl lg:text-4xl">|</span>
