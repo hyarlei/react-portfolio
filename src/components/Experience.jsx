@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
-import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { useInView } from "react-intersection-observer";
 import css from "../assets/css.png";
 import github from "../assets/github.png";
 import html from "../assets/html.png";
@@ -11,8 +11,8 @@ import postgresql from "../assets/postgresql.png";
 import reactImage from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png";
-import docker from "../assets/docker.png"; 
-import java from "../assets/java.png"; 
+import docker from "../assets/docker.png";
+import java from "../assets/java.png";
 
 const Experience = () => {
   const [ref, inView] = useInView({
@@ -26,9 +26,9 @@ const Experience = () => {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -39,9 +39,9 @@ const Experience = () => {
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const techs = [
@@ -135,7 +135,7 @@ const Experience = () => {
       color: "from-red-500 to-red-700",
       shadowColor: "shadow-red-500/20",
     },
-     {
+    {
       id: 11,
       src: github,
       title: "GitHub",
@@ -156,48 +156,67 @@ const Experience = () => {
   ];
 
   const categories = [
-    { name: "Frontend", icon: "🎨", count: techs.filter(tech => tech.category === "Frontend").length },
-    { name: "Backend", icon: "⚙️", count: techs.filter(tech => tech.category === "Backend").length },
-    { name: "Database", icon: "🗄️", count: techs.filter(tech => tech.category === "Database").length },
-    { name: "Tools", icon: "🛠️", count: techs.filter(tech => tech.category === "Tools").length },
-    { name: "Language", icon: "💻", count: techs.filter(tech => tech.category === "Language").length },
+    {
+      name: "Frontend",
+      icon: "🎨",
+      count: techs.filter((tech) => tech.category === "Frontend").length,
+    },
+    {
+      name: "Backend",
+      icon: "⚙️",
+      count: techs.filter((tech) => tech.category === "Backend").length,
+    },
+    {
+      name: "Database",
+      icon: "🗄️",
+      count: techs.filter((tech) => tech.category === "Database").length,
+    },
+    {
+      name: "Tools",
+      icon: "🛠️",
+      count: techs.filter((tech) => tech.category === "Tools").length,
+    },
+    {
+      name: "Language",
+      icon: "💻",
+      count: techs.filter((tech) => tech.category === "Language").length,
+    },
   ];
 
   return (
     <section
       name="experience"
-      // ✅ AJUSTE NO GRADIENTE: Começa em gray-900 para colar com a página anterior
-      className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-blue-900 py-20"
+      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-900 to-black py-20"
       ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.h2 
+          <motion.h2
             className="text-4xl md:text-5xl font-bold text-white mb-4"
             initial={{ opacity: 0, scale: 0.5 }}
-            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
+            animate={
+              inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }
+            }
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Stack {' '}
-            <span className="gradient-text">Tecnológico</span>
+            Stack <span className="gradient-text">Tecnológico</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             {/* Texto fixo em Português alinhado com o perfil */}
-            Domínio do ecossistema JavaScript moderno, com forte base em arquitetura de software e bancos de dados.
+            Domínio do ecossistema JavaScript moderno, com forte base em
+            arquitetura de software e bancos de dados.
           </motion.p>
-          <motion.div 
+          <motion.div
             className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-6 rounded-full"
             initial={{ width: 0 }}
             animate={inView ? { width: 96 } : { width: 0 }}
@@ -206,7 +225,7 @@ const Experience = () => {
         </motion.div>
 
         {/* Categories Overview */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-16"
           variants={containerVariants}
           initial="hidden"
@@ -220,14 +239,18 @@ const Experience = () => {
               whileHover={{ scale: 1.05 }}
             >
               <div className="text-2xl mb-2">{category.icon}</div>
-              <h3 className="text-white font-semibold text-sm">{category.name}</h3>
-              <p className="text-gray-400 text-xs">{category.count} tecnologias</p>
+              <h3 className="text-white font-semibold text-sm">
+                {category.name}
+              </h3>
+              <p className="text-gray-400 text-xs">
+                {category.count} tecnologias
+              </p>
             </motion.div>
           ))}
         </motion.div>
 
         {/* Tech Stack Grid */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
           variants={containerVariants}
           initial="hidden"
@@ -238,10 +261,10 @@ const Experience = () => {
               key={tech.id}
               className={`group bg-gray-900/60 backdrop-blur-lg border border-gray-700/30 rounded-2xl p-6 text-center hover:border-gray-600/50 transition-all duration-500 ${tech.shadowColor} hover:shadow-2xl`}
               variants={itemVariants}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 rotateY: 5,
-                transition: { duration: 0.3 }
+                transition: { duration: 0.3 },
               }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 50 }}
@@ -249,15 +272,17 @@ const Experience = () => {
               transition={{ duration: 0.6, delay: index * 0.05 }}
             >
               {/* Tech Icon */}
-              <motion.div 
+              <motion.div
                 className="relative mb-4"
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.6 }}
               >
-                <div className={`absolute inset-0 bg-gradient-to-r ${tech.color} rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity duration-300`}></div>
+                <div
+                  className={`absolute inset-0 bg-gradient-to-r ${tech.color} rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity duration-300`}
+                ></div>
                 <div className="relative bg-gray-800/50 rounded-full p-4 border border-gray-600/30">
-                  <img 
-                    src={tech.src} 
+                  <img
+                    src={tech.src}
                     alt={tech.title}
                     className="w-12 h-12 mx-auto object-contain"
                   />
@@ -274,22 +299,24 @@ const Experience = () => {
                   {tech.title}
                 </h3>
                 <p className="text-gray-500 text-xs mb-2">{tech.category}</p>
-                
+
                 {/* Skill Level */}
-                <motion.div 
+                <motion.div
                   className="flex items-center justify-center space-x-1"
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
                 >
-                  <span className={`px-2 py-1 text-xs rounded-full bg-gradient-to-r ${tech.color} text-white font-medium`}>
+                  <span
+                    className={`px-2 py-1 text-xs rounded-full bg-gradient-to-r ${tech.color} text-white font-medium`}
+                  >
                     {tech.level}
                   </span>
                 </motion.div>
               </motion.div>
 
               {/* Hover Effect Overlay */}
-              <motion.div 
+              <motion.div
                 className="absolute inset-0 bg-gradient-to-t from-blue-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: 1 }}
@@ -299,13 +326,13 @@ const Experience = () => {
         </motion.div>
 
         {/* Bottom CTA */}
-        <motion.div 
+        <motion.div
           className="text-center mt-16"
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          <motion.p 
+          <motion.p
             className="text-gray-400 mb-6"
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
@@ -316,11 +343,15 @@ const Experience = () => {
           <motion.div
             className="inline-flex items-center space-x-2 text-blue-400 font-medium"
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+            animate={
+              inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+            }
             transition={{ duration: 0.6, delay: 1.4 }}
             whileHover={{ scale: 1.05 }}
           >
-            <span className="font-mono">console.log("Ready for PagBank! 💳");</span>
+            <span className="font-mono">
+              console.log("Ready for PagBank! 💳");
+            </span>
           </motion.div>
         </motion.div>
       </div>
