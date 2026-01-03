@@ -58,7 +58,6 @@ const Contact = () => {
 
     const { name, email, message } = formData;
 
-    // Validação
     if (!name || !email || !message) {
       toast.error("Por favor, preencha todos os campos!");
       setIsSubmitting(false);
@@ -96,7 +95,7 @@ const Contact = () => {
   return (
     <section
       name="contact"
-      className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 py-20 relative overflow-hidden"
+      className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-gray-950 py-20 relative overflow-hidden"
       ref={ref}
     >
       <Toaster 
@@ -111,28 +110,27 @@ const Contact = () => {
         }}
       />
 
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 opacity-20">
         <motion.div 
-          className="absolute top-20 left-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"
+          className="absolute top-20 left-10 w-60 h-60 bg-blue-600/10 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.6, 0.3],
+            opacity: [0.3, 0.5, 0.3],
           }}
           transition={{
-            duration: 4,
+            duration: 5,
             repeat: Infinity,
             ease: "easeInOut"
           }}
         />
         <motion.div 
-          className="absolute bottom-20 right-20 w-52 h-52 bg-purple-500/10 rounded-full blur-3xl"
+          className="absolute bottom-20 right-20 w-60 h-60 bg-purple-600/10 rounded-full blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.5, 0.2],
+            opacity: [0.2, 0.4, 0.2],
           }}
           transition={{
-            duration: 5,
+            duration: 6,
             repeat: Infinity,
             ease: "easeInOut",
             delay: 1
@@ -142,16 +140,14 @@ const Contact = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
         <SectionHeader
           title="Vamos"
-          highlightedText="Conversar"
-          description="Tem uma ideia interessante? Quer colaborar em um projeto? Ou apenas quer trocar uma ideia sobre tecnologia? Estou sempre aberto para novas oportunidades e conversas!"
+          highlightedText="Trabalhar Juntos?"
+          description="Estou pronto para aplicar minha experiência em NestJS e React para resolver problemas reais no PagBank. Vamos agendar uma conversa?"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
-          {/* Contact Info */}
           <motion.div 
             className="space-y-8"
             variants={containerVariants}
@@ -161,16 +157,15 @@ const Contact = () => {
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
                 <FaEnvelope className="mr-3 text-blue-400" />
-                Entre em Contato
+                Canais de Contato
               </h3>
               <p className="text-gray-400 mb-8 leading-relaxed">
-                Prefere um contato mais direto? Escolha a opção que mais se adequa ao seu estilo:
+                Estou disponível para entrevistas técnicas e onboard imediato.
               </p>
             </motion.div>
 
-            {/* Contact Cards */}
             <div className="space-y-4">
-              {contactInfo.map((contact, index) => (
+              {contactInfo.map((contact) => (
                 <motion.a
                   key={contact.title}
                   href={contact.link}
@@ -181,7 +176,7 @@ const Contact = () => {
                   whileHover={{ scale: 1.02, x: 10 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <div className="bg-gray-900/60 backdrop-blur-lg border border-gray-700/30 rounded-xl p-6 hover:border-gray-600/50 transition-all duration-300 group">
+                  <div className="bg-gray-900/60 backdrop-blur-lg border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all duration-300 group">
                     <div className="flex items-center space-x-4">
                       <div className={`p-3 rounded-lg bg-gray-800/50 ${contact.color} group-hover:scale-110 transition-transform duration-300`}>
                         <contact.icon size={24} />
@@ -198,31 +193,29 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Fun Message */}
             <motion.div 
-              className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-6 mt-8"
+              className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 rounded-xl p-6 mt-8"
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
             >
               <div className="flex items-start space-x-3">
-                <div className="text-blue-400 mt-1">💡</div>
+                <div className="text-blue-400 mt-1">🚀</div>
                 <div>
-                  <h4 className="text-white font-semibold mb-2">Resposta Rápida Garantida!</h4>
+                  <h4 className="text-white font-semibold mb-2">Disponibilidade</h4>
                   <p className="text-gray-400 text-sm">
-                    Geralmente respondo em até 24 horas. Se for sobre café e código, ainda mais rápido! ☕️
+                    Estou sempre atento ao email. Respondo solicitações de recrutadores com prioridade máxima.
                   </p>
                 </div>
               </div>
             </motion.div>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.div 
-            className="bg-gray-900/60 backdrop-blur-lg border border-gray-700/30 rounded-2xl p-8"
+            className="bg-gray-900/60 backdrop-blur-lg border border-gray-800 rounded-2xl p-8"
             variants={itemVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.01 }}
           >
             <motion.h3 
               className="text-2xl font-bold text-white mb-6 flex items-center"
@@ -238,46 +231,40 @@ const Contact = () => {
               variants={containerVariants}
             >
               <motion.div variants={itemVariants}>
-                <label className="block text-gray-300 text-sm font-medium mb-2">
-                  Nome Completo
-                </label>
+                <label className="block text-gray-300 text-sm font-medium mb-2">Nome / Empresa</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="Seu nome aqui..."
-                  className="w-full p-4 bg-gray-800/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  placeholder="Ex: Recrutamento PagBank"
+                  className="w-full p-4 bg-black/40 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all duration-300"
                   required
                 />
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <label className="block text-gray-300 text-sm font-medium mb-2">
-                  Email
-                </label>
+                <label className="block text-gray-300 text-sm font-medium mb-2">Email Profissional</label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="seu.email@exemplo.com"
-                  className="w-full p-4 bg-gray-800/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  placeholder="email@empresa.com"
+                  className="w-full p-4 bg-black/40 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all duration-300"
                   required
                 />
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <label className="block text-gray-300 text-sm font-medium mb-2">
-                  Mensagem
-                </label>
+                <label className="block text-gray-300 text-sm font-medium mb-2">Mensagem</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  rows="6"
-                  placeholder="Conte-me sobre seu projeto, ideia ou apenas diga olá! 👋"
-                  className="w-full p-4 bg-gray-800/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 resize-none"
+                  rows="5"
+                  placeholder="Gostaríamos de agendar uma entrevista..."
+                  className="w-full p-4 bg-black/40 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all duration-300 resize-none"
                   required
                 />
               </motion.div>
@@ -285,38 +272,21 @@ const Contact = () => {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-4 px-8 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-700 text-white py-4 px-8 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-800 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg shadow-blue-900/20"
                 variants={itemVariants}
-                whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
-                whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 {isSubmitting ? (
-                  <>
-                    <motion.div
-                      className="w-5 h-5 border-2 border-white border-t-transparent rounded-full"
-                      animate={{ rotate: 360 }}
-                      transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                    />
-                    <span>Enviando...</span>
-                  </>
+                  <span>Enviando...</span>
                 ) : (
                   <>
                     <FaPaperPlane />
-                    <span>Enviar Mensagem</span>
+                    <span>Enviar Proposta</span>
                   </>
                 )}
               </motion.button>
             </motion.form>
-
-            {/* Bottom Message */}
-            <motion.div 
-              className="mt-6 text-center"
-              variants={itemVariants}
-            >
-              <p className="text-gray-500 text-sm font-mono">
-                console.log("Aguardando sua mensagem! 🚀");
-              </p>
-            </motion.div>
           </motion.div>
         </div>
       </div>
