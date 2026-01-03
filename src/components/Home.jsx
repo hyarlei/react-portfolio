@@ -12,6 +12,11 @@ const Home = () => {
   const fullText = t("fullStackDeveloper");
 
   useEffect(() => {
+    setDisplayText('');
+    setCurrentIndex(0);
+  }, [fullText]);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       if (currentIndex < fullText.length) {
         setDisplayText(fullText.slice(0, currentIndex + 1));
@@ -221,7 +226,7 @@ const Home = () => {
             <pre className="text-xs leading-relaxed">
               {`const developer = {
   name: "Hyarlei Silva",
-  stack: ["NestJS", "React", "Docker"],
+  stack: ["NodeJS", "React", "Docker"],
   architecture: "Clean Code",
   coffee: "☕ essential",
   
