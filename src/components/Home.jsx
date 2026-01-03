@@ -120,7 +120,6 @@ const Home = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             ></motion.h1>
-
             <motion.h2
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
               initial={{ opacity: 0, y: 50 }}
@@ -130,17 +129,6 @@ const Home = () => {
               {" "}
               <span className="gradient-text relative">
                 {displayText}
-                <motion.span
-                  className="absolute -right-3 bg-blue-400 w-1 sm:w-1.5 md:w-2 h-5 top-1sm:h-8 sm:top-2 md:h-10 md:top-2 lg:h-14 lg:top-3"
-                  animate={{ opacity: [0, 1, 0] }}
-                  transition={{
-                    duration: 0.8,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                >
-                  |
-                </motion.span>
               </span>
             </motion.h2>
           </motion.div>
