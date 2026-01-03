@@ -38,7 +38,7 @@ const Portfolio = () => {
   return (
     <section
       name="portfolio"
-      className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 py-20"
+      className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-gray-900 py-20"
       ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +59,7 @@ const Portfolio = () => {
           {portfolioProjects.map(({ id, title, description, src, demoLink, codeLink, technologies, category }, index) => (
             <motion.div
               key={id}
-              className="group bg-gray-900/60 backdrop-blur-lg border border-gray-700/30 rounded-2xl overflow-hidden shadow-2xl"
+              className="group bg-slate-800/50 backdrop-blur-lg border border-slate-700/50 rounded-2xl overflow-hidden shadow-2xl"
               variants={itemVariants}
               whileHover={{ 
                 scale: 1.05,
