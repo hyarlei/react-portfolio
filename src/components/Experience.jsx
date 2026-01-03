@@ -4,18 +4,17 @@ import { useInView } from 'react-intersection-observer';
 import css from "../assets/css.png";
 import github from "../assets/github.png";
 import html from "../assets/html.png";
-import javascript from "../assets/javascript.png";
 import mongodb from "../assets/mongodb.png";
 import nestjs from "../assets/nestjs.png";
 import node from "../assets/node.png";
 import postgresql from "../assets/postgresql.png";
-import prisma from "../assets/prisma.png";
 import reactImage from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png";
+import docker from "../assets/docker.png"; 
+import java from "../assets/java.png"; 
 
 const Experience = () => {
-  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -66,15 +65,6 @@ const Experience = () => {
     },
     {
       id: 3,
-      src: javascript,
-      title: "JavaScript",
-      category: "Language",
-      level: "Avançado",
-      color: "from-yellow-400 to-yellow-600",
-      shadowColor: "shadow-yellow-500/20",
-    },
-    {
-      id: 4,
       src: typescript,
       title: "TypeScript",
       category: "Language",
@@ -83,7 +73,7 @@ const Experience = () => {
       shadowColor: "shadow-blue-600/20",
     },
     {
-      id: 5,
+      id: 4,
       src: reactImage,
       title: "React",
       category: "Frontend",
@@ -92,7 +82,7 @@ const Experience = () => {
       shadowColor: "shadow-cyan-500/20",
     },
     {
-      id: 6,
+      id: 5,
       src: tailwind,
       title: "Tailwind CSS",
       category: "Frontend",
@@ -101,7 +91,7 @@ const Experience = () => {
       shadowColor: "shadow-teal-400/20",
     },
     {
-      id: 7,
+      id: 6,
       src: node,
       title: "Node.js",
       category: "Backend",
@@ -110,13 +100,22 @@ const Experience = () => {
       shadowColor: "shadow-green-500/20",
     },
     {
+      id: 7,
+      src: nestjs,
+      title: "NestJS",
+      category: "Backend",
+      level: "Intermediário",
+      color: "from-red-400 to-red-600",
+      shadowColor: "shadow-red-600/20",
+    },
+    {
       id: 8,
-      src: github,
-      title: "GitHub",
+      src: docker,
+      title: "Docker",
       category: "Tools",
-      level: "Avançado",
-      color: "from-gray-400 to-gray-600",
-      shadowColor: "shadow-gray-400/20",
+      level: "Intermediário",
+      color: "from-blue-400 to-blue-600",
+      shadowColor: "shadow-blue-500/20",
     },
     {
       id: 9,
@@ -129,30 +128,30 @@ const Experience = () => {
     },
     {
       id: 10,
+      src: java,
+      title: "Java (POO)",
+      category: "Language",
+      level: "Básico",
+      color: "from-red-500 to-red-700",
+      shadowColor: "shadow-red-500/20",
+    },
+     {
+      id: 11,
+      src: github,
+      title: "GitHub",
+      category: "Tools",
+      level: "Avançado",
+      color: "from-gray-400 to-gray-600",
+      shadowColor: "shadow-gray-400/20",
+    },
+    {
+      id: 12,
       src: mongodb,
       title: "MongoDB",
       category: "Database",
       level: "Intermediário",
       color: "from-green-400 to-green-600",
       shadowColor: "shadow-green-400/20",
-    },
-    {
-      id: 11,
-      src: nestjs,
-      title: "NestJS",
-      category: "Backend",
-      level: "Intermediário",
-      color: "from-red-400 to-red-600",
-      shadowColor: "shadow-red-600/20",
-    },
-    {
-      id: 12,
-      src: prisma,
-      title: "Prisma",
-      category: "Database",
-      level: "Intermediário",
-      color: "from-indigo-400 to-indigo-600",
-      shadowColor: "shadow-indigo-400/20",
     },
   ];
 
@@ -167,7 +166,8 @@ const Experience = () => {
   return (
     <section
       name="experience"
-      className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 py-20"
+      // ✅ AJUSTE NO GRADIENTE: Começa em gray-900 para colar com a página anterior
+      className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-blue-900 py-20"
       ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -185,8 +185,8 @@ const Experience = () => {
             animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Minhas {' '}
-            <span className="gradient-text">Tecnologias</span>
+            Stack {' '}
+            <span className="gradient-text">Tecnológico</span>
           </motion.h2>
           <motion.p 
             className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed"
@@ -194,7 +194,8 @@ const Experience = () => {
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            {t('experienceDescription')} Aqui estão as principais tecnologias e ferramentas que domino.
+            {/* Texto fixo em Português alinhado com o perfil */}
+            Domínio do ecossistema JavaScript moderno, com forte base em arquitetura de software e bancos de dados.
           </motion.p>
           <motion.div 
             className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-6 rounded-full"
@@ -310,7 +311,7 @@ const Experience = () => {
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
           >
-            Sempre aprendendo novas tecnologias e aprimorando minhas habilidades! 🚀
+            Focado em me tornar um especialista em Arquitetura de Software. 🚀
           </motion.p>
           <motion.div
             className="inline-flex items-center space-x-2 text-blue-400 font-medium"
@@ -319,7 +320,7 @@ const Experience = () => {
             transition={{ duration: 0.6, delay: 1.4 }}
             whileHover={{ scale: 1.05 }}
           >
-            <span className="font-mono">console.log("Always learning! 💻");</span>
+            <span className="font-mono">console.log("Ready for PagBank! 💳");</span>
           </motion.div>
         </motion.div>
       </div>
