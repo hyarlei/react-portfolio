@@ -143,11 +143,7 @@ const About = () => {
                 </motion.p>
 
                 <motion.p className="text-lg" variants={itemVariants}>
-                  Como desenvolvedor Full Stack com foco em arquitetura
-                  escalável, especializo-me em construir sistemas robustos
-                  usando NodeJS, Docker e metodologias de Clean Code. Meu
-                  objetivo é entregar software seguro e performático que gere
-                  valor real para o negócio.
+                  {t("skills")}
                 </motion.p>
 
                 <motion.p className="text-lg" variants={itemVariants}>

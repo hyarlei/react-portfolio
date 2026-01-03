@@ -46,7 +46,7 @@ const Portfolio = () => {
         <SectionHeader
           title="Meu"
           highlightedText="Portfólio"
-          description={t('checkOutWork') + ' Cada projeto representa um desafio superado e uma solução inovadora.'}
+          description={t('checkOutWork')}
         />
 
         {/* Portfolio Grid */}

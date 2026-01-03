@@ -1,10 +1,6 @@
 import { Helmet } from 'react-helmet';
 import { AppConfig } from '../config/appConfig';
 
-/**
- * Componente SEO para gerenciar metadados e tags de SEO
- * Necessita instalar: npm install react-helmet
- */
 const SEO = ({ title, description, keywords }) => {
   const metaTitle = title || AppConfig.siteMetadata.title;
   const metaDescription = description || AppConfig.siteMetadata.description;

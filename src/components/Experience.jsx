@@ -15,6 +15,7 @@ import docker from "../assets/docker.png";
 import java from "../assets/java.png";
 
 const Experience = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,

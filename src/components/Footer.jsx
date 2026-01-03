@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { FaCode, FaEnvelope, FaGithub, FaHeart, FaLinkedin, FaRocket } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   const footerVariants = {

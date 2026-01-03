@@ -11,7 +11,7 @@ export const portfolioProjects = [
     description:
       "Plataforma de alta performance para venda de ingressos. Arquitetura escalável com NestJS e Docker para suportar picos de acesso. Controle de concorrência com transações ACID no PostgreSQL.",
     src: ticketBlastImg,
-    demoLink: "https://ticketblast-demo.vercel.app",
+    demoLink: "https://ticket-blast.vercel.app/",
     codeLink: "https://github.com/hyarlei/ticketblast",
     technologies: [
       { name: "NodeJS", icon: FaNodeJs, color: "text-green-600" },
