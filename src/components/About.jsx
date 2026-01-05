@@ -45,35 +45,31 @@ const About = () => {
   const features = [
     {
       icon: FaCode,
-      title: "Clean Architecture",
-      description:
-        "Desenvolvo sistemas desacoplados e testáveis, facilitando a manutenção e escalabilidade a longo prazo.",
+      title: t("title1"),
+      description: t("description1"),
     },
     {
       icon: FaRocket,
-      title: "Alta Performance",
-      description:
-        "Foco em otimização de queries e APIs de baixa latência para garantir a melhor experiência.",
+      title: t("title2"),
+      description: t("description2"),
     },
     {
       icon: FaUsers,
-      title: "Trabalho em Equipe",
-      description:
-        "Experiência com metodologias ágeis (Scrum) e revisão de código (Code Review) colaborativa.",
+      title: t("title3"),
+      description: t("description3"),
     },
     {
       icon: FaLightbulb,
-      title: "Soluções Robustas",
-      description:
-        "Utilizo tecnologias modernas como Docker e TypeScript para resolver problemas complexos com segurança.",
+      title: t("title4"),
+      description: t("description4"),
     },
   ];
 
   const stats = [
-    { number: "4+", label: "Anos de Experiência" },
-    { number: "25+", label: "Projetos Entregues" },
-    { number: "100%", label: "Foco em Qualidade" },
-    { number: "∞", label: "Commits Realizados" },
+    { number: "4+", label: t("Years of Experience") },
+    { number: "25+", label: t("Projects Delivered") },
+    { number: "100%", label: t("Focus on Quality") },
+    { number: "∞", label: t("Commits Made") },
   ];
 
   return (
@@ -94,15 +90,14 @@ const About = () => {
             ease: "linear",
           }}
         />
-        </div>
-        <motion.div
+      </div>
+      <motion.div
         ref={ref}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
       >
-        {/* Section Header */}
         <motion.div className="text-center mb-16" variants={itemVariants}>
           <motion.h2
             className="text-4xl md:text-5xl font-bold text-white mb-4"
@@ -112,7 +107,9 @@ const About = () => {
             }
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Sobre <span className="gradient-text">Mim</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              {t("about")} <span className="gradient-text">{t("me")}</span>
+            </h2>
           </motion.h2>
           <motion.div
             className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto rounded-full"
@@ -134,7 +131,7 @@ const About = () => {
                 transition={{ duration: 0.2 }}
               >
                 <FaGraduationCap className="text-blue-400 mr-3" />
-                Minha Jornada
+                {t("My Journey")}
               </motion.h3>
 
               <div className="space-y-6 text-gray-300 leading-relaxed">
@@ -158,7 +155,7 @@ const About = () => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <FaHeart className="text-red-400 mr-2" />O que me motiva
+                <FaHeart className="text-red-400 mr-2" />{t("What motivates me")}
               </motion.h4>
               <motion.p
                 className="text-gray-300 leading-relaxed"
@@ -210,7 +207,7 @@ const About = () => {
               transition={{ duration: 0.3 }}
             >
               <h4 className="text-xl font-semibold text-white mb-6 text-center">
-                Alguns Números
+                {t("Some Numbers")}
               </h4>
               <motion.div
                 className="grid grid-cols-2 gap-6"
@@ -255,16 +252,13 @@ const About = () => {
                 transition={{ duration: 0.2 }}
               >
                 <FaCode className="text-green-400 mr-2" />
-                Filosofia de Desenvolvimento
+                {t("Development Philosophy")}
               </motion.h4>
               <motion.p
                 className="text-gray-300 text-sm leading-relaxed"
                 variants={itemVariants}
               >
-                "Software de qualidade não é apenas sobre funcionar, é sobre ser
-                seguro, escalável e fácil de manter. Acredito que a excelência
-                técnica é a base para produtos que transformam a vida dos
-                usuários."
+                {t("Prase")}
               </motion.p>
             </motion.div>
           </motion.div>
@@ -275,7 +269,7 @@ const About = () => {
             className="text-gray-400 mb-6 text-lg"
             variants={itemVariants}
           >
-            Interessado em saber mais sobre minha experiência?
+            {t("Question")}
           </motion.p>
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -306,7 +300,7 @@ const About = () => {
               whileTap={{ scale: 0.95 }}
             >
               <FaComments className="group-hover:animate-pulse" />
-              <span>Vamos Conversar</span>
+              <span>{t("Let's chat!")}</span>
             </motion.a>
           </motion.div>
         </motion.div>

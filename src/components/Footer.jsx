@@ -29,11 +29,11 @@ const Footer = () => {
   };
 
   const quickLinks = [
-    { name: "Início", to: "home" },
-    { name: "Sobre", to: "about" },
-    { name: "Portfólio", to: "portfolio" },
-    { name: "Experiência", to: "experience" },
-    { name: "Contato", to: "contact" }
+    { name: "Home", to: "home" },
+    { name: "About", to: "about" },
+    { name: "Portfolio", to: "portfolio" },
+    { name: "Experience", to: "experience" },
+    { name: "Contact", to: "contact" }
   ];
 
   const socialLinks = [
@@ -82,7 +82,7 @@ const Footer = () => {
                 &lt;Hyarlei Silva /&gt;
               </h3>
               <p className="text-gray-400 text-lg leading-relaxed max-w-md">
-                Desenvolvedor Full Stack focado em criar soluções escaláveis e seguras. Especialista em ecossistema JavaScript e Arquitetura de Software.
+                {t("description5")}
               </p>
             </div>
             
@@ -90,7 +90,7 @@ const Footer = () => {
               className="flex flex-wrap gap-2 mb-6"
               variants={itemVariants}
             >
-              {["NestJS", "React", "Docker", "TypeScript", "Java"].map((tech, index) => (
+              {["NodeJS", "React", "Docker", "TypeScript"].map((tech, index) => (
                 <motion.span
                   key={tech}
                   className="px-3 py-1 bg-gray-900 border border-gray-800 rounded-full text-xs text-gray-300 hover:bg-gray-800 hover:text-blue-400 transition-colors duration-200 cursor-default"
@@ -108,7 +108,7 @@ const Footer = () => {
           <motion.div variants={itemVariants}>
             <h4 className="text-lg font-semibold mb-6 flex items-center">
               <FaRocket className="mr-2 text-blue-400" />
-              Navegação
+              {t("navigation")}
             </h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
@@ -130,7 +130,7 @@ const Footer = () => {
           <motion.div variants={itemVariants}>
             <h4 className="text-lg font-semibold mb-6 flex items-center">
               <FaCode className="mr-2 text-purple-400" />
-              Redes Sociais
+              {t("socialMedia")}
             </h4>
             
             <div className="flex space-x-4 mb-6">
@@ -153,14 +153,14 @@ const Footer = () => {
               className="bg-gradient-to-r from-blue-900/10 to-purple-900/10 border border-blue-500/10 rounded-lg p-4"
               whileHover={{ scale: 1.02 }}
             >
-              <p className="text-sm text-gray-300 mb-2">Pronto para inovar?</p>
+              <p className="text-sm text-gray-300 mb-2">{t("prase3")}</p>
               <Link
                 to="contact"
                 smooth
                 duration={500}
                 className="text-blue-400 hover:text-blue-300 font-medium cursor-pointer transition-colors duration-300"
               >
-                Contate-me agora →
+                {t("prase4")}
               </Link>
             </motion.div>
           </motion.div>
@@ -179,7 +179,7 @@ const Footer = () => {
             >
               <span>© {currentYear} Hyarlei Silva.</span>
               <span className="hidden sm:inline">|</span>
-              <span>Construído com</span>
+              <span>{t("builtWith")}</span>
               <motion.div
                 animate={{ 
                   scale: [1, 1.2, 1],

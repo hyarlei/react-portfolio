@@ -42,14 +42,12 @@ const Portfolio = () => {
       ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <SectionHeader
-          title="Meu"
-          highlightedText="Portfólio"
-          description={t('checkOutWork')}
+          title={t("My")}
+          highlightedText={t("Portfolio1")}
+          description={t("checkOutWork")}
         />
 
-        {/* Portfolio Grid */}
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={containerVariants}
@@ -71,7 +69,6 @@ const Portfolio = () => {
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              {/* Image Container */}
               <div className="relative overflow-hidden">
                 <motion.img
                   src={src}
@@ -87,7 +84,6 @@ const Portfolio = () => {
                   transition={{ duration: 0.3 }}
                 />
                 
-                {/* Category Badge */}
                 <motion.div 
                   className="absolute top-4 left-4"
                   initial={{ x: -50, opacity: 0 }}
@@ -99,7 +95,6 @@ const Portfolio = () => {
                   </span>
                 </motion.div>
 
-                {/* Quick Action Buttons */}
                 <motion.div 
                   className="absolute inset-0 flex items-center justify-center space-x-4"
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -129,7 +124,6 @@ const Portfolio = () => {
                 </motion.div>
               </div>
 
-              {/* Content */}
               <div className="p-6">
                 <motion.h3 
                   className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300"
@@ -149,7 +143,6 @@ const Portfolio = () => {
                   {description}
                 </motion.p>
 
-                {/* Technologies */}
                 <motion.div 
                   className="flex flex-wrap gap-2 mb-6"
                   initial={{ opacity: 0, y: 20 }}
@@ -171,7 +164,6 @@ const Portfolio = () => {
                   ))}
                 </motion.div>
 
-                {/* Action Buttons */}
                 <motion.div 
                   className="flex space-x-3"
                   initial={{ opacity: 0, y: 20 }}
@@ -207,7 +199,6 @@ const Portfolio = () => {
           ))}
         </motion.div>
 
-        {/* Call to Action */}
         <motion.div 
           className="text-center mt-16"
           initial={{ opacity: 0, y: 50 }}
@@ -220,7 +211,7 @@ const Portfolio = () => {
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
           >
-            Interessado em ver mais projetos ou discutir uma colaboração?
+            {t("Question1")}
           </motion.p>
           <motion.a
             href="#contact"
@@ -231,7 +222,7 @@ const Portfolio = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span>Vamos Conversar</span>
+            <span>{t("Let's chat!")}</span>
             <FaExternalLinkAlt size={14} />
           </motion.a>
         </motion.div>

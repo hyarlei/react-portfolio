@@ -205,7 +205,7 @@ const Experience = () => {
             }
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Stack <span className="gradient-text">Tecnológico</span>
+            {t("experienceTitle1")} <span className="gradient-text">{t("experienceTitle")}</span>
           </motion.h2>
           <motion.p
             className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed"
@@ -213,9 +213,7 @@ const Experience = () => {
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            {/* Texto fixo em Português alinhado com o perfil */}
-            Domínio do ecossistema JavaScript moderno, com forte base em
-            arquitetura de software e bancos de dados.
+            {t("techDescription")}
           </motion.p>
           <motion.div
             className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-6 rounded-full"
@@ -225,7 +223,6 @@ const Experience = () => {
           />
         </motion.div>
 
-        {/* Categories Overview */}
         <motion.div
           className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-16"
           variants={containerVariants}
@@ -250,7 +247,6 @@ const Experience = () => {
           ))}
         </motion.div>
 
-        {/* Tech Stack Grid */}
         <motion.div
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
           variants={containerVariants}
@@ -272,7 +268,6 @@ const Experience = () => {
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
             >
-              {/* Tech Icon */}
               <motion.div
                 className="relative mb-4"
                 whileHover={{ rotate: 360 }}
@@ -290,7 +285,6 @@ const Experience = () => {
                 </div>
               </motion.div>
 
-              {/* Tech Info */}
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -301,7 +295,6 @@ const Experience = () => {
                 </h3>
                 <p className="text-gray-500 text-xs mb-2">{tech.category}</p>
 
-                {/* Skill Level */}
                 <motion.div
                   className="flex items-center justify-center space-x-1"
                   initial={{ opacity: 0, scale: 0 }}
@@ -316,7 +309,6 @@ const Experience = () => {
                 </motion.div>
               </motion.div>
 
-              {/* Hover Effect Overlay */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-t from-blue-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 initial={{ opacity: 0 }}
@@ -326,7 +318,6 @@ const Experience = () => {
           ))}
         </motion.div>
 
-        {/* Bottom CTA */}
         <motion.div
           className="text-center mt-16"
           initial={{ opacity: 0, y: 50 }}
@@ -339,7 +330,7 @@ const Experience = () => {
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
           >
-            Focado em me tornar um especialista em Arquitetura de Software. 🚀
+            {t("phrase3")}
           </motion.p>
           <motion.div
             className="inline-flex items-center space-x-2 text-blue-400 font-medium"

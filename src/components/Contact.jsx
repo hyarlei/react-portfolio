@@ -141,9 +141,9 @@ const Contact = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionHeader
-          title="Vamos"
-          highlightedText="Trabalhar Juntos?"
-          description="Estou pronto para aplicar minha experiência em NestJS e React para resolver problemas reais no PagBank. Vamos agendar uma conversa?"
+          title={t("contactTitle")}
+          highlightedText={t("contactTitle1")}
+          description={t("contactDescription")}
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -157,10 +157,10 @@ const Contact = () => {
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
                 <FaEnvelope className="mr-3 text-blue-400" />
-                Canais de Contato
+                {t('contactTitle2')}
               </h3>
               <p className="text-gray-400 mb-8 leading-relaxed">
-                Estou disponível para entrevistas técnicas e onboard imediato.
+                {t('Availability')}
               </p>
             </motion.div>
 
@@ -201,9 +201,9 @@ const Contact = () => {
               <div className="flex items-start space-x-3">
                 <div className="text-blue-400 mt-1">🚀</div>
                 <div>
-                  <h4 className="text-white font-semibold mb-2">Disponibilidade</h4>
+                  <h4 className="text-white font-semibold mb-2">{t('Availability1')}</h4>
                   <p className="text-gray-400 text-sm">
-                    Estou sempre atento ao email. Respondo solicitações de recrutadores com prioridade máxima.
+                    {t('Prase2')}
                   </p>
                 </div>
               </div>
@@ -222,7 +222,7 @@ const Contact = () => {
               variants={itemVariants}
             >
               <FaPaperPlane className="mr-3 text-purple-400" />
-              Envie uma Mensagem
+              {t("sendMessage")}
             </motion.h3>
 
             <motion.form 
@@ -231,20 +231,20 @@ const Contact = () => {
               variants={containerVariants}
             >
               <motion.div variants={itemVariants}>
-                <label className="block text-gray-300 text-sm font-medium mb-2">Nome / Empresa</label>
+                <label className="block text-gray-300 text-sm font-medium mb-2">{t("enterName")}</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="Ex: Recrutamento PagBank"
+                  placeholder="Ex: PagBank"
                   className="w-full p-4 bg-black/40 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all duration-300"
                   required
                 />
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <label className="block text-gray-300 text-sm font-medium mb-2">Email Profissional</label>
+                <label className="block text-gray-300 text-sm font-medium mb-2">{t("yourEmail")}</label>
                 <input
                   type="email"
                   name="email"
@@ -257,13 +257,13 @@ const Contact = () => {
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <label className="block text-gray-300 text-sm font-medium mb-2">Mensagem</label>
+                <label className="block text-gray-300 text-sm font-medium mb-2">{t("yourMessage")}</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
                   rows="5"
-                  placeholder="Gostaríamos de agendar uma entrevista..."
+                  placeholder={t("message")}
                   className="w-full p-4 bg-black/40 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all duration-300 resize-none"
                   required
                 />
@@ -282,7 +282,7 @@ const Contact = () => {
                 ) : (
                   <>
                     <FaPaperPlane />
-                    <span>Enviar Proposta</span>
+                    <span>{t("sendMessage1")}</span>
                   </>
                 )}
               </motion.button>

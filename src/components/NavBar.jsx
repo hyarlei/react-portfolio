@@ -46,7 +46,6 @@ const NavBar = () => {
             </h1>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
             {links.map(({ id, link }) => (
               <Link
@@ -61,7 +60,6 @@ const NavBar = () => {
               </Link>
             ))}
             
-            {/* Language Selector */}
             <div className="relative ml-4">
               <button
                 onClick={() => setDropdown(!dropdown)}
@@ -90,7 +88,6 @@ const NavBar = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setNav(!nav)}
@@ -102,7 +99,6 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div className={`md:hidden transition-all duration-300 ease-in-out ${
         nav ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}>
