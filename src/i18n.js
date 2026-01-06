@@ -19,7 +19,7 @@ i18n
           "home": "Home",
           "about": "About",
           "portfolio": "Portfolio",
-          "experience": "Stack",
+          "experience": "Experience",
           "contact": "Contact",
           "language": "Language",
           "welcome": "Welcome to my portfolio",
@@ -52,11 +52,11 @@ i18n
           "description": "Software Developer with 4 years of hands-on market experience, specializing in building robust and scalable Backends. My journey combines the agility of development as a PJ/Freelancer with the theoretical foundation of a degree in Information Systems from UFC.",
           "skills": "I am an specialist in the JavaScript/TypeScript ecosystem (Node.js & NestJS), with strong expertise in Docker, software architecture (SOLID/Clean Code), and data integrity.",
           "dedication": "I don't just write code; I create solutions focused on performance and security, ensuring applications can handle growth and high demand.",
-          "opportunities": "I am open to new opportunities that allow me to leverage my skills in building high-quality software solutions.",
+          "opportunities": "I seek complex technical challenges where I can apply advanced software engineering concepts—such as horizontal scalability, microservices, and API optimization. My focus is on generating real business value through cutting-edge technology.",
 
-          "fullStackDeveloper": "Full Stack Developer",
+          "fullStackDeveloper": "Backend Developer",
           "prase2": "Mastery of the modern JavaScript ecosystem, with a strong foundation in software architecture and databases.",
-          "experienceDescription": "Full Stack Developer with 4+ years of experience building scalable applications. Specialist in NodeJS, React, and Docker.",
+          "experienceDescription": "Backend Developer with 4 years of experience building scalable applications. Specialist in NodeJS, React, and Docker.",
           "phrase3": "Focused on becoming a Software Engineer expert. 🚀",
 
           "checkOutWork": "Check out my recent projects focused on performance and architecture. Each project represents a challenge overcome and an innovative solution.",
@@ -81,7 +81,7 @@ i18n
           "message": "We would like to schedule an interview...",
           "Prase2": "I always check my email. I respond to recruiters' requests with the highest priority.",
 
-          "description5": "Full Stack Developer focused on creating scalable and secure solutions. Specialist in the JavaScript ecosystem and Software Architecture.",
+          "description5": "Backend Developer focused on creating scalable and secure solutions. Specialist in the JavaScript ecosystem and Software Architecture.",
           "prase3": "Ready to innovate?",
           "prase4": "Contact me now →",
           "socialMedia": "Social media",
@@ -94,7 +94,7 @@ i18n
           "home": "Início",
           "about": "Sobre",
           "portfolio": "Portfólio",
-          "experience": "Stack",
+          "experience": "Experiência",
           "contact": "Contato",
           "language": "Idioma",
           "welcome": "Bem-vindo ao meu portfólio",
@@ -126,10 +126,10 @@ i18n
           "description": "Desenvolvedor de Software com 4 anos de experiência prática no mercado, especializado na construção de Backends robustos e escaláveis. Minha trajetória une a agilidade do desenvolvimento como PJ/Freelance com a fundamentação teórica da graduação em Sistemas de Informação na UFC.",
           "skills": "Sou especialista no ecossistema JavaScript/TypeScript (Node.js & NestJS), com forte domínio em Docker, arquitetura de software (SOLID/Clean Code) e integridade de dados.",
           "dedication": "Não escrevo apenas código; crio soluções focadas em performance e segurança, garantindo que as aplicações suportem crescimento e alta demanda.",
-          "opportunities": "Não escrevo apenas código; crio soluções focadas em performance e segurança, garantindo que as aplicações suportem crescimento e alta demanda.",
+          "opportunities": "Busco desafios técnicos complexos, onde eu possa aplicar conceitos avançados de engenharia de software — como escalabilidade horizontal, microsserviços e otimização de APIs. Meu foco é gerar valor real para o negócio através de tecnologia de ponta.",
           
-          "fullStackDeveloper": "Desenvolvedor Full Stack",
-          "experienceDescription": "Desenvolvedor Full Stack com mais de 4 anos de experiência criando aplicações escaláveis. Especialista em NodeJS, React e Docker.",
+          "fullStackDeveloper": "Desenvolvedor Backend",
+          "experienceDescription": "Desenvolvedor de Software com 4 anos de experiência no mercado. Especialista em NodeJS, TypeScript e Docker.",
           "phrase3": "Focado em me tornar um especialista em Engenharia de Software. 🚀",
 
 
@@ -146,7 +146,7 @@ i18n
           "contactTitle2": "Canais de Contato",
           "Availability1": "Disponibilidade",
           "Availability": "Estou disponível para entrevistas técnicas e integração imediata.",
-          "contactDescription": "Estou pronto para aplicar minha experiência em NodeJS e React para resolver problemas reais. Vamos agendar uma conversa?",
+          "contactDescription": "Estou pronto para aplicar minha experiência em NodeJS e TypeScript para resolver problemas reais. Vamos agendar uma conversa?",
           "enterName": "Nome / Empresa",
           "yourEmail": "Email Profissional",
           "yourMessage": "Mensagem",
@@ -157,7 +157,7 @@ i18n
           "Question1": "Interessado em ver mais projetos ou discutir uma colaboração?",
           "sendMessage1": "Enviar",
 
-          "description5": "Desenvolvedor Full Stack focado em criar soluções escaláveis e seguras. Especialista no ecossistema JavaScript e Arquitetura de Software.",
+          "description5": "Desenvolvedor Backend focado em criar soluções escaláveis e seguras. Especialista no ecossistema JavaScript e Arquitetura de Software.",
           "prase3": "Pronto para inovar?",
           "prase4": "Entre em contato agora →",
           "socialMedia": "Redes sociais",
