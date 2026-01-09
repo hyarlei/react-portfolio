@@ -56,7 +56,7 @@ i18n
 
           "fullStackDeveloper": "Fullstack Developer",
           "prase2": "Mastery of the modern JavaScript ecosystem, with a strong foundation in software architecture and databases.",
-          "experienceDescription": "Backend Developer with 4 years of experience building scalable applications. Specialist in NodeJS, React, and Docker.",
+          "experienceDescription": "Fullstack Developer with 4 years of experience building scalable applications. Specialist in NodeJS, React, and Docker.",
           "phrase3": "Focused on becoming a Software Engineer expert. 🚀",
 
           "checkOutWork": "Check out my recent projects focused on performance and architecture. Each project represents a challenge overcome and an innovative solution.",
