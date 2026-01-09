@@ -54,7 +54,7 @@ i18n
           "dedication": "I don't just write code; I create solutions focused on performance and security, ensuring applications can handle growth and high demand.",
           "opportunities": "I seek complex technical challenges where I can apply advanced software engineering concepts—such as horizontal scalability, microservices, and API optimization. My focus is on generating real business value through cutting-edge technology.",
 
-          "fullStackDeveloper": "Backend Developer",
+          "fullStackDeveloper": "Fullstack Developer",
           "prase2": "Mastery of the modern JavaScript ecosystem, with a strong foundation in software architecture and databases.",
           "experienceDescription": "Backend Developer with 4 years of experience building scalable applications. Specialist in NodeJS, React, and Docker.",
           "phrase3": "Focused on becoming a Software Engineer expert. 🚀",
@@ -81,7 +81,7 @@ i18n
           "message": "We would like to schedule an interview...",
           "Prase2": "I always check my email. I respond to recruiters' requests with the highest priority.",
 
-          "description5": "Backend Developer focused on creating scalable and secure solutions. Specialist in the JavaScript ecosystem and Software Architecture.",
+          "description5": "Fullstack Developer focused on creating scalable and secure solutions. Specialist in the JavaScript ecosystem and Software Architecture.",
           "prase3": "Ready to innovate?",
           "prase4": "Contact me now →",
           "socialMedia": "Social media",
@@ -128,7 +128,7 @@ i18n
           "dedication": "Não escrevo apenas código; crio soluções focadas em performance e segurança, garantindo que as aplicações suportem crescimento e alta demanda.",
           "opportunities": "Busco desafios técnicos complexos, onde eu possa aplicar conceitos avançados de engenharia de software — como escalabilidade horizontal, microsserviços e otimização de APIs. Meu foco é gerar valor real para o negócio através de tecnologia de ponta.",
           
-          "fullStackDeveloper": "Desenvolvedor Backend",
+          "fullStackDeveloper": "Desenvolvedor Fullstack",
           "experienceDescription": "Desenvolvedor de Software com 4 anos de experiência no mercado. Especialista em NodeJS, TypeScript e Docker.",
           "phrase3": "Focado em me tornar um especialista em Engenharia de Software. 🚀",
 
@@ -157,7 +157,7 @@ i18n
           "Question1": "Interessado em ver mais projetos ou discutir uma colaboração?",
           "sendMessage1": "Enviar",
 
-          "description5": "Desenvolvedor Backend focado em criar soluções escaláveis e seguras. Especialista no ecossistema JavaScript e Arquitetura de Software.",
+          "description5": "Desenvolvedor Fullstack focado em criar soluções escaláveis e seguras. Especialista no ecossistema JavaScript e Arquitetura de Software.",
           "prase3": "Pronto para inovar?",
           "prase4": "Entre em contato agora →",
           "socialMedia": "Redes sociais",
