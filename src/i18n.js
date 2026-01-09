@@ -123,13 +123,13 @@ i18n
 
           "My": "Meu",
           "Portfolio1": "Portfólio",
-          "description": "Desenvolvedor de Software com 4 anos de experiência prática no mercado, especializado na construção de Backends robustos e escaláveis. Minha trajetória une a agilidade do desenvolvimento como PJ/Freelance com a fundamentação teórica da graduação em Sistemas de Informação na UFC.",
+          "description": "Fullstack Developer com 4 anos de experiência prática no mercado, especializado na construção de Backends robustos e escaláveis. Minha trajetória une a agilidade do desenvolvimento como PJ/Freelance com a fundamentação teórica da graduação em Sistemas de Informação na UFC.",
           "skills": "Sou especialista no ecossistema JavaScript/TypeScript (Node.js & NestJS), com forte domínio em Docker, arquitetura de software (SOLID/Clean Code) e integridade de dados.",
           "dedication": "Não escrevo apenas código; crio soluções focadas em performance e segurança, garantindo que as aplicações suportem crescimento e alta demanda.",
           "opportunities": "Busco desafios técnicos complexos, onde eu possa aplicar conceitos avançados de engenharia de software — como escalabilidade horizontal, microsserviços e otimização de APIs. Meu foco é gerar valor real para o negócio através de tecnologia de ponta.",
           
           "fullStackDeveloper": "Desenvolvedor Fullstack",
-          "experienceDescription": "Desenvolvedor de Software com 4 anos de experiência no mercado. Especialista em NodeJS, TypeScript e Docker.",
+          "experienceDescription": "Desenvolvedor Fullstack com 4 anos de experiência no mercado. Especialista em NodeJS, TypeScript e Docker.",
           "phrase3": "Focado em me tornar um especialista em Engenharia de Software. 🚀",
 
 
