@@ -13,6 +13,8 @@ import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png";
 import docker from "../assets/docker.png";
 import java from "../assets/java.png";
+import csharp from "../assets/csharp.png";
+import dotnet from "../assets/dotnet.png";
 
 const Experience = () => {
   const { t } = useTranslation();
@@ -153,6 +155,24 @@ const Experience = () => {
       level: "Intermediário",
       color: "from-green-400 to-green-600",
       shadowColor: "shadow-green-400/20",
+    },
+    {
+      id: 13,
+      src: csharp,
+      title: "C#",
+      category: "Language",
+      level: "Intermediário",
+      color: "from-purple-500 to-purple-700",
+      shadowColor: "shadow-purple-500/20",
+    },
+    {
+      id: 14,
+      src: dotnet,
+      title: ".NET 8",
+      category: "Backend",
+      level: "Intermediário",
+      color: "from-purple-400 to-indigo-600",
+      shadowColor: "shadow-purple-400/20",
     },
   ];
 

@@ -107,9 +107,7 @@ const About = () => {
             }
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              {t("about")} <span className="gradient-text">{t("me")}</span>
-            </h2>
+            {t("about")} <span className="gradient-text">{t("me")}</span>
           </motion.h2>
           <motion.div
             className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto rounded-full"

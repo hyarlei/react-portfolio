@@ -226,7 +226,7 @@ const Home = () => {
             <pre className="text-xs leading-relaxed">
               {`const developer = {
   name: "Hyarlei Silva",
-  stack: ["NodeJS", "TypeScript", "Docker"],
+  stack: ["NodeJS", ".NET", "React"],
   architecture: "Clean Code",
   coffee: "☕ essential",
   

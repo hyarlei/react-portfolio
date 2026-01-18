@@ -50,13 +50,13 @@ i18n
           "My": "My",
           "Portfolio1": "Portfolio",
           "description": "Software Developer with 4 years of hands-on market experience, specializing in building robust and scalable Backends. My journey combines the agility of development as a PJ/Freelancer with the theoretical foundation of a degree in Information Systems from UFC.",
-          "skills": "I am an specialist in the JavaScript/TypeScript ecosystem (Node.js & NestJS), with strong expertise in Docker, software architecture (SOLID/Clean Code), and data integrity.",
+          "skills": "I am a specialist in the JavaScript/TypeScript ecosystem (Node.js & NestJS) and expanding my stack with .NET 8 and C#, with strong expertise in Docker, software architecture (SOLID/Clean Code), and data integrity.",
           "dedication": "I don't just write code; I create solutions focused on performance and security, ensuring applications can handle growth and high demand.",
           "opportunities": "I seek complex technical challenges where I can apply advanced software engineering concepts—such as horizontal scalability, microservices, and API optimization. My focus is on generating real business value through cutting-edge technology.",
 
           "fullStackDeveloper": "Fullstack Developer",
           "prase2": "Mastery of the modern JavaScript ecosystem, with a strong foundation in software architecture and databases.",
-          "experienceDescription": "Fullstack Developer with 4 years of experience building scalable applications. Specialist in NodeJS, React, and Docker.",
+          "experienceDescription": "Fullstack Developer with 4 years of experience building scalable applications. Specialist in NodeJS, React, Docker and expanding stack to .NET 8 & C#.",
           "phrase3": "Focused on becoming a Software Engineer expert. 🚀",
 
           "checkOutWork": "Check out my recent projects focused on performance and architecture. Each project represents a challenge overcome and an innovative solution.",
@@ -65,11 +65,11 @@ i18n
           
           "experienceTitle": "Tech",
           "experienceTitle1": "Stack",
-          "techDescription": "Mastery of the modern JavaScript ecosystem, with a strong foundation in Software Architecture and Databases.",
+          "techDescription": "Mastery of the modern JavaScript ecosystem and expanding to .NET 8 with C#, with a strong foundation in Software Architecture and Databases.",
           
           "contactTitle": "Let's",
           "contactTitle1": "Work Together?",
-          "contactDescription": "I'm ready to apply my NodeJS and React expertise to solve real-world problems. Let's schedule a conversation?",
+          "contactDescription": "I'm ready to apply my NodeJS, React, and .NET expertise to solve real-world problems. Let's schedule a conversation?",
           "contactTitle2": "Contact Channels",
           "enterName": "Name / Company",
           "Availability": "I am available for technical interviews and immediate onboarding.",
@@ -124,12 +124,12 @@ i18n
           "My": "Meu",
           "Portfolio1": "Portfólio",
           "description": "Fullstack Developer com 4 anos de experiência prática no mercado, especializado na construção de Backends robustos e escaláveis. Minha trajetória une a agilidade do desenvolvimento como PJ/Freelance com a fundamentação teórica da graduação em Sistemas de Informação na UFC.",
-          "skills": "Sou especialista no ecossistema JavaScript/TypeScript (Node.js & NestJS), com forte domínio em Docker, arquitetura de software (SOLID/Clean Code) e integridade de dados.",
+          "skills": "Sou especialista no ecossistema JavaScript/TypeScript (Node.js & NestJS) e expandindo minha stack com .NET 8 e C#, com forte domínio em Docker, arquitetura de software (SOLID/Clean Code) e integridade de dados.",
           "dedication": "Não escrevo apenas código; crio soluções focadas em performance e segurança, garantindo que as aplicações suportem crescimento e alta demanda.",
           "opportunities": "Busco desafios técnicos complexos, onde eu possa aplicar conceitos avançados de engenharia de software — como escalabilidade horizontal, microsserviços e otimização de APIs. Meu foco é gerar valor real para o negócio através de tecnologia de ponta.",
           
           "fullStackDeveloper": "Desenvolvedor Fullstack",
-          "experienceDescription": "Desenvolvedor Fullstack com 4 anos de experiência no mercado. Especialista em NodeJS, TypeScript e Docker.",
+          "experienceDescription": "Desenvolvedor Fullstack com 4 anos de experiência no mercado. Especialista em NodeJS, TypeScript, Docker e expandindo stack para .NET 8 e C#.",
           "phrase3": "Focado em me tornar um especialista em Engenharia de Software. 🚀",
 
 
@@ -139,14 +139,14 @@ i18n
 
           "experienceTitle": "Tecnológico",
           "experienceTitle1": "Stack",
-          "techDescription": "Domínio do ecossistema JavaScript moderno, com forte base em Arquitetura de Software e Banco de Dados.",
+          "techDescription": "Domínio do ecossistema JavaScript moderno e expandindo para .NET 8 com C#, com forte base em Arquitetura de Software e Banco de Dados.",
           "availability": "Estou disponível para entrevistas técnicas e início imediato.",
           "contactTitle": "Vamos Trabalhar",
           "contactTitle1": "Juntos?",
           "contactTitle2": "Canais de Contato",
           "Availability1": "Disponibilidade",
           "Availability": "Estou disponível para entrevistas técnicas e integração imediata.",
-          "contactDescription": "Estou pronto para aplicar minha experiência em NodeJS e TypeScript para resolver problemas reais. Vamos agendar uma conversa?",
+          "contactDescription": "Estou pronto para aplicar minha experiência em NodeJS, TypeScript e .NET para resolver problemas reais. Vamos agendar uma conversa?",
           "enterName": "Nome / Empresa",
           "yourEmail": "Email Profissional",
           "yourMessage": "Mensagem",
